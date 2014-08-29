@@ -37,6 +37,7 @@ main {
   @extend .container;
   background-color: #eee;
   padding-bottom: 80px;
+  padding-left:0;padding-right:0;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
   }
@@ -44,3 +45,4 @@ section {
   @extend .row;
   margin-top: 20px;
   }
+.no-padding{ padding-left:0; padding-right:0;}

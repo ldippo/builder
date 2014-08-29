@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+body{position:relative;}
+.carousel {width:100%;}
+#footer {width:100%;background:#111;padding:2em 2em 2em 2em;position:relative;bottom:0px;margin-bottom:0;}
+.container-fluid {margin: 2em auto;}

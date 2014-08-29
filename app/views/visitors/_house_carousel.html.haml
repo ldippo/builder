@@ -1,0 +1,22 @@
+#house-carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#house-carousel-example-generic"}
+    %li{"data-slide-to" => "1", "data-target" => "#house-carousel-example-generic"}
+    %li{"data-slide-to" => "2", "data-target" => "#house-carousel-example-generic"}
+  / Wrapper for slides
+  .carousel-inner
+    .item.active
+      %img{:alt => "...", :src => "http://lorempixel.com/800/600"}/
+      .carousel-caption
+        %h2 property name
+        %p this is some bullshit about a home!
+    .item
+      %img{:alt => "...", :src => "http://lorempixel.com/800/600"}/
+      .carousel-caption
+        %h2 other property name
+        %p this is some other bullshit about a home!
+  / Controls
+  %a.left.carousel-control{"data-slide" => "prev", :href => "#house-carousel-example-generic", :role => "button"}
+    %span.glyphicon.glyphicon-chevron-left
+  %a.right.carousel-control{"data-slide" => "next", :href => "#house-carousel-example-generic", :role => "button"}
+    %span.glyphicon.glyphicon-chevron-right
