@@ -6,15 +6,15 @@
   / Wrapper for slides
   .carousel-inner
     .item.active
-      = image_tag 'home1.jpg'
+      = image_tag 'home1.jpg', :style => "width:100%;"
       
       .carousel-caption
-        %h1(style="font-size:5em;font-weight:bolder;text-shadow: 0 0 10px #111;padding-bottom:2em;") We buy your house
+        //%h1(style="font-size:5em;font-weight:bolder;text-shadow: 0 0 10px #111;padding-bottom:2em;") We buy your house
 
     .item
-      = image_tag 'home1.jpg'
+      = image_tag 'home1.jpg', :style => "width:100%;"
       .carousel-caption
-        %h1(style="font-size:5em;font-weight:bolder;text-shadow: 0 0 10px #111;padding-bottom:2em;") Get paid cash
+        //%h1(style="font-size:5em;font-weight:bolder;text-shadow: 0 0 10px #111;padding-bottom:2em;") All cash, no contingencies, no agents, no commissions
   / Controls
   %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
     %span.glyphicon.glyphicon-chevron-left

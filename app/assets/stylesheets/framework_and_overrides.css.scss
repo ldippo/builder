@@ -3,6 +3,10 @@
 @import "bootstrap";
 
 // make all images responsive by default
+h1,h2,h3,h4,h5,h6,p, a {
+  font-family: 'Raleway', sans-serif;
+}
+b{font-weight:900;}
 img {
   @extend .img-responsive;
   margin: 0 auto;
@@ -11,6 +15,11 @@ img {
 .navbar-brand {
   font-size: inherit;
   }
+.navbar-nav > li > a {
+  line-height:50px;
+  font-weight: bolder;
+  color: black;
+}
 .navbar {background: rgba(255,255,255,1);}
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
@@ -39,7 +48,7 @@ main {
   padding-bottom: 0px;
   padding-left:0;padding-right:0;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
+  margin-top: 80px; // accommodate the navbar
   }
 section {
   @extend .row;

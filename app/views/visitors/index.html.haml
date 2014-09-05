@@ -1,17 +1,56 @@
-.container-fluid.no-paddding
-  .col-xs-12.no-padding
-    = render "carousel"
-.container-fluid
-  .row
-    .col-xs-12.col-md-6
-      %h1.text-left Buy your next home from us.
-      .embed-responsive.embed-responsive-4by3
+= render "carousel"
+.container-fluid.background-item
+  
+  .col-xs-12.col-md-8.col-md-offset-2#main
+    .container-fluid.no-paddding
+      .col-xs-12.no-padding
+        =# image_tag "lindsay.png"
+        %h1.text-center We're Lindsay development. We transform homes.
+        %hr
         
-        %iframe.embed-responsive-item(src="https://mapsengine.google.com/map/u/0/embed?mid=ztSFQwTFPZCc.kgxh_p1iYidY")
-    .col-xs-12.col-md-6
-      %h1.text-left Buy your next home from us.
-      = render "house_carousel"
-.container-fluid#footer
-  .row
-    .col-xs-12.col-md-6.col-md-offset-3.text-center
-      = render "tool_form"
+        .row
+          
+          .col-xs-12.col-sm-8
+            
+            = render "house_carousel"        
+          .col-xs-12.col-sm-4
+            %ul.front-list
+              %li
+                %h1 
+                  %b We'll buy your home:
+              %li 
+                %h3 All cash
+              %li 
+                %h3 no contingencies
+              %li 
+                %h3 no agents
+              %li 
+                %h3 no commissions.
+    .container-fluid.form-panel
+      %h1.text-center(style="color:white;padding:1em;text-transform:uppercase;")
+        %b Sell to us &amp; we'll transform yours
+      %p(style="color:white;font-size:1.8em;") Simply enter your information below and we will provide you with a free quote from one of our experts. How much you can sell for right now, CASH.
+      .row
+        .col-xs-12.col-md-4
+          = render "tool_form"
+        .col-xs-12.col-md-8
+          = render "work_carousel"
+            
+    .container-fluid
+      .row
+        .col-xs-12
+          %h1.text-left See all of our recently sold properties. 
+          .embed-responsive.embed-responsive-4by3
+
+            %iframe.embed-responsive-item(src="https://mapsengine.google.com/map/u/0/embed?mid=ztSFQwTFPZCc.kgxh_p1iYidY")
+    .container-fluid#footer
+      .row
+        .col-xs-12
+          .col-xs-12.col-md-3.col-md-offset-9
+            %ul.social-footer
+              %li
+                %i.fa.fa-facebook.fa-2x
+              %li
+                %i.fa.fa-twitter.fa-2x
+              %li
+                %i.fa.fa-rss.fa-2x
